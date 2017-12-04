@@ -1,0 +1,59 @@
+@-ms-viewport {width: device-width;}
+
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	-ms-overflow-style: scrollbar;
+}
+
+*,
+*::before,
+*::after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+@mixin cf() {
+	&::after {
+		display : block;
+		content : "";
+		clear   : both;
+	}
+}
+
+.container {
+	box-sizing   : border-box;
+	margin-left  : auto;
+	margin-right : auto;
+	position     : relative;
+	max-width    : $site-width;
+	@include cf;
+}
+
+.row{
+	@include cf;
+}
+
+
+@mixin transition($transition:$default-transition) {
+	transition: $transition;
+}
+
+
+@function perc($target,$context) {
+	@return ($target / $context) * 100%;
+}
+
+@mixin pwidth($target, $context){
+	width: perc($target,$context);
+}
+
+@mixin colu($target, $context, $float-direction:left) {
+	@include pwidth($target, $context);
+	float : $float-direction;
+}
+
+@mixin colf($fraction, $float-direction:left) {
+	width: 100% * $fraction;
+	float: $float-direction;
+}

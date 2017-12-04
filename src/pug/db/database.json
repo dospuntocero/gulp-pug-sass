@@ -1,0 +1,27 @@
+{
+    "Title": "Hola mundo",
+    "Navigation": [
+        {
+            "title": "HOME",
+            "link": ""
+        },
+        {
+            "title": "ABOUT US",
+            "link": "about-us"
+        },
+        {
+            "title": "CONTACT",
+            "link": "contact-us"
+        }
+    ],
+    "FooterNavigation": [
+        {
+            "title": "PRIVACY POLICY",
+            "link": "privacy-policy"
+        },
+        {
+            "title": "CONTACT",
+            "link": "contact-us"
+        }
+    ]
+}

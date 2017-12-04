@@ -1,0 +1,18 @@
+// Buttons
+.btn {
+	font-size     : rem-calc(13);
+	padding       : rem-calc(6) rem-calc(21);
+	color         : #F9B200;
+	background: rgb(0, 109, 138);
+	border        : 1px solid #F9B200;
+	border-radius : 10px;
+	text-decoration: none;
+	@include transition();
+
+
+	&:hover{
+		color         : #006D8A;
+		border        : 1px solid #006D8A;
+		background : #F9B200;
+	}
+}

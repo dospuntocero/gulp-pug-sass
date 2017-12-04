@@ -1,0 +1,10 @@
+extends layouts/default
+append mainVars
+	- var currentPage = 'index'
+	- var pageTitle = 'Welcome to the home page'
+	- var metaKey = 'add, some, keywords'
+	- var metaDesc = 'This is the page description.'
+block content
+	.first
+		p hola que tal como estas
+		p #{Title}

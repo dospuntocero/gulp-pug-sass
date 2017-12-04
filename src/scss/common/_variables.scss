@@ -1,0 +1,26 @@
+// Base styles
+@import url('https://fonts.googleapis.com/css?family=Asap|Roboto:500');
+
+// Variables
+
+$site-width     :    1140px !default;
+// Font size attribute applied to `<html>` and `<body>`. We use 100% by default so the value is inherited from the user's browser settings.
+// @type Number
+$global-font-size: 100% !default;
+
+// Global width of your site. Used by the grid to determine row width.
+// @type Number
+$global-width: rem-calc($site-width);
+
+// Default line height for all type. `$global-lineheight` is 24px while `$global-font-size` is 16px
+// @type Number
+$global-lineheight: 1.5 !default;
+
+
+//transitios
+$default-transition: all .2s ease-in-out;
+
+// Colors
+$brand-primary  :    #27ae60;
+
+$body-font-family: 'Asap', sans-serif;
