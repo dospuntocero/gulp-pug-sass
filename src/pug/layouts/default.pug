@@ -10,17 +10,17 @@ html
 		header
 			nav
 				a(href="/",title="back to home")#logo
-					img(src='/img/logo.gif')
+					img(width="130" src='https://dospuntocero.cl/wp-content/uploads/2016/03/logo-dospuntocero.svg')
 				ul
-					each page,i in Navigation
+					each page , i in Navigation
 						if (currentPage === page.link)
-							li(class='#{page.link}')
+							li(class = page.link).current
 								a(href='/#{page.link}').active #{page.title}
 						else
-							li(class=page.link)
+							li(class = page.link)
 								a(href='/'+page.link) #{page.title}
 
-		main(id='#{currentPage}')
+		main(class=currentPage)
 			block content
 
 		include ../partials/footer

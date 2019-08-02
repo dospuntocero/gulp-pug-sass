@@ -4,11 +4,16 @@
   "description": "static site generator",
   "main": "gulpfile.js",
   "dependencies": {
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.18.13",
-    "gulp": "^3.9.1"
+    "foundation-sites": "^6.4.4-rc1",
+    "gulp": "^3.9.0",
+    "jquery": "^3.4.1"
   },
   "devDependencies": {
     "gulp-autoprefixer": "^4.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-plumber": "^1.1.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0"
   },
@@ -20,6 +25,10 @@
     "site",
     "generator"
   ],
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.9.0"
+  },
   "author": "francisco arenas",
   "license": "IDK"
 }

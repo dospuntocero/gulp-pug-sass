@@ -1,0 +1,10 @@
+extends layouts/default
+append mainVars
+	- var currentPage = 'deep-link'
+	- var pageTitle = 'Welcome to the deep link'
+	- var metaKey = 'add, some, keywords'
+	- var metaDesc = 'This is the page description.'
+block content
+	.first
+		p deep link
+		p #{Title}

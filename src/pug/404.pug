@@ -1,0 +1,9 @@
+extends layouts/default
+append mainVars
+	- var currentPage = 'error 404'
+	- var pageTitle = 'this page doesn\'t exist'
+	- var metaKey = 'add, some, keywords'
+	- var metaDesc = 'This is the page description.'
+block content
+	.first
+		p 404. no page available

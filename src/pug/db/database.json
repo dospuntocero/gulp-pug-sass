@@ -12,6 +12,10 @@
         {
             "title": "CONTACT",
             "link": "contact-us"
+        },
+        {
+            "title": "DEEP LINK",
+            "link": "about-us/deep-link"
         }
     ],
     "FooterNavigation": [

@@ -1,0 +1,19 @@
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+
+    @each $value in $displays {
+      body{
+        position: relative;
+        &:after{
+          content: $breakpoint;
+          position: fixed;
+          top:0;
+          left: 0;
+        }
+      }
+    }
+  }
+}

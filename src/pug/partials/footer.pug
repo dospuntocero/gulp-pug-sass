@@ -4,8 +4,8 @@ footer.footer
 		nav
 			ul
 				each page,i in FooterNavigation
-					li(class="#{page.link}")
-							a(href='#{page.link}') #{page.title}
+					li(class=page.link)
+							a(href=page.link) #{page.title}
 
-script(src='/js/vendor/jquery-2.0.3.min.js')
-script(src='/js/main.js')
+//- script(src='/js/vendor/jquery-2.0.3.min.js')
+//- script(src='/js/main.js')

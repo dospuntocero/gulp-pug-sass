@@ -1,0 +1,19 @@
+
+
+@function perc($target,$context) {
+  @return ($target / $context) * 100%;
+}
+
+@mixin pwidth($target, $context){
+  width: perc($target,$context);
+}
+
+@mixin colu($target, $context, $float-direction:left) {
+  @include pwidth($target, $context);
+  float : $float-direction;
+}
+
+@mixin colf($fraction, $float-direction:left) {
+  width: 100% * $fraction;
+  float: $float-direction;
+}
