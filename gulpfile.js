@@ -48,6 +48,7 @@ gulp.task('serve', ['sass'], function() {
  });
 });
 
+
 // Default task
 gulp.task('default', ['sass', 'pug','images','copy','serve'], function () {
 	gulp.watch("./src/js/**.*", ['copy']);
